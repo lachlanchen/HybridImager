@@ -1,0 +1,10 @@
+{
+  "model": "nano-banana-2",
+  "prompt": "Publication-quality technical concept illustration of a hybrid scientific imaging board named HybridCamera. A square Weiqi-board mosaic shows alternating blue event-sensor tiles and green frame-sensor tiles around a central gold single-pixel bucket detector. Add a subtle purple spectral filter ring, low-noise transimpedance amplifier block, FPGA timing hub, differential ADC, DAC thresholds, and microscope scan trigger connectors. Clean white laboratory background, vivid but precise engineering style, no people, minimal readable labels.",
+  "aspect_ratio": "16:9",
+  "resolution": "2K",
+  "format": "png",
+  "return_binary": false,
+  "variants": 1,
+  "safe_mode": true
+}

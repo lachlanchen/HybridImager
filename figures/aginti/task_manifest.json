@@ -1,0 +1,23 @@
+{
+  "tool": "generate_image",
+  "provider": "venice",
+  "host": "https://api.venice.ai/api/v1",
+  "model": "nano-banana-2",
+  "requestedFormat": "png",
+  "actualFormat": "png",
+  "formatNotice": "",
+  "outputDir": "figures/aginti",
+  "promptFile": "figures/aginti/prompt.txt",
+  "requestPayloadRedacted": "figures/aginti/request_payload.redacted.json",
+  "status": "succeeded",
+  "createdAt": "2026-06-08T02:11:08.722Z",
+  "finishedAt": "2026-06-08T02:11:31.753Z",
+  "downloadedFiles": [
+    {
+      "path": "figures/aginti/hybrid-camera-concept.png",
+      "bytes": 4473709,
+      "sha256": "414efff40677e995d713fe63236049fff8adc21af201306dba5189aef74a3c55"
+    }
+  ],
+  "taskId": "aKnsozXsI4G72w9ZRbZ9CX5KbPJEyRnN"
+}
