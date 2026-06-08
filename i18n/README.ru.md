@@ -41,6 +41,7 @@ HybridImager — это исследовательская и проектная
 | Концептуальная статья | `publications/hybrid_camera_concept.pdf` |
 | Обзор открытых камер | `publications/open_camera_project_survey.pdf` |
 | Разреженная плата датчика V1 | `hardware/v1-weiqi-sensor/` |
+| Выровненная матрица ALS-PT19 V2 | `hardware/v2-als-pt19-32x32/` |
 | Исследовательские заметки | `references/` |
 | Детерминированные схемы | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | План аппаратуры | `hardware/board_architecture.md` |

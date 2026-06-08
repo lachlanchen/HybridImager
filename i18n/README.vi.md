@@ -41,6 +41,7 @@ Gói rà soát: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) ch�
 | Bài viết ý tưởng | `publications/hybrid_camera_concept.pdf` |
 | Khảo sát camera mở | `publications/open_camera_project_survey.pdf` |
 | Bo cảm biến thưa V1 | `hardware/v1-weiqi-sensor/` |
+| Ma trận ALS-PT19 căn thẳng V2 | `hardware/v2-als-pt19-32x32/` |
 | Ghi chú nghiên cứu | `references/` |
 | Sơ đồ xác định | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Kế hoạch phần cứng | `hardware/board_architecture.md` |

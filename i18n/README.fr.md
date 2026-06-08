@@ -41,6 +41,7 @@ Paquet de revue : [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) co
 | Article conceptuel | `publications/hybrid_camera_concept.pdf` |
 | Revue des caméras ouvertes | `publications/open_camera_project_survey.pdf` |
 | Carte capteur clairsemée V1 | `hardware/v1-weiqi-sensor/` |
+| Matrice ALS-PT19 alignée V2 | `hardware/v2-als-pt19-32x32/` |
 | Notes de recherche | `references/` |
 | Diagrammes déterministes | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Plan matériel | `hardware/board_architecture.md` |

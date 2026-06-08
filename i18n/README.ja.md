@@ -41,6 +41,7 @@ HybridImager は、混合型科学検出器のための研究・設計ワーク�
 | コンセプト論文 | `publications/hybrid_camera_concept.pdf` |
 | オープンカメラ調査 | `publications/open_camera_project_survey.pdf` |
 | V1 疎センサーボード | `hardware/v1-weiqi-sensor/` |
+| V2 整列 ALS-PT19 マトリクス | `hardware/v2-als-pt19-32x32/` |
 | 研究ノート | `references/` |
 | 決定的に生成される図 | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | ハードウェア計画 | `hardware/board_architecture.md` |

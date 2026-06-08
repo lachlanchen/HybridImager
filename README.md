@@ -34,6 +34,14 @@ The first board draft is a KiCad-generated **Weiqi sparse sensor carrier** with 
 
 Review package: [`hardware/v1-weiqi-sensor/`](hardware/v1-weiqi-sensor/) contains the KiCad board, dataset, BOM, clean DRC JSON, STEP model, Gerbers, drill files, and full-view renders.
 
+## V2 ALS-PT19 Matrix
+
+![HybridImager V2 KiCad render](hardware/v2-als-pt19-32x32/artifacts/hybridimager-v2-kicad-render-full.png)
+
+V2 is a dense `32x32` sensor-board draft using the `ALS-PT19` phototransistor family from the `CustomSensor`/digiOBSCURA reference. Unlike the older 45-degree, 2.0 mm layout, V2 uses unrotated footprints on a `2.54 mm` pitch so each sensor pad, row header pin, and column header pin is aligned and routable.
+
+Review package: [`hardware/v2-als-pt19-32x32/`](hardware/v2-als-pt19-32x32/) contains the KiCad board, CustomSensor source dataset, BOM, clean DRC JSON, STEP model, Gerbers, drill files, and full-view renders.
+
 ## Current Contents
 
 | Area | Location |
@@ -41,6 +49,7 @@ Review package: [`hardware/v1-weiqi-sensor/`](hardware/v1-weiqi-sensor/) contain
 | Concept paper | `publications/hybrid_camera_concept.pdf` |
 | Open camera survey | `publications/open_camera_project_survey.pdf` |
 | V1 sparse sensor board | `hardware/v1-weiqi-sensor/` |
+| V2 aligned ALS-PT19 matrix | `hardware/v2-als-pt19-32x32/` |
 | Research notes | `references/` |
 | Deterministic diagrams | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Hardware plan | `hardware/board_architecture.md` |

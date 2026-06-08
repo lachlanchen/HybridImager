@@ -41,6 +41,7 @@ HybridImager 是一个面向混合科学探测器的研究与设计工作区。�
 | 概念论文 | `publications/hybrid_camera_concept.pdf` |
 | 开放相机项目调研 | `publications/open_camera_project_survey.pdf` |
 | V1 稀疏传感器板 | `hardware/v1-weiqi-sensor/` |
+| V2 对齐 ALS-PT19 矩阵 | `hardware/v2-als-pt19-32x32/` |
 | 研究笔记 | `references/` |
 | 确定性生成图 | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | 硬件计划 | `hardware/board_architecture.md` |

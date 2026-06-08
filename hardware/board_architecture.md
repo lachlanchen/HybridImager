@@ -24,6 +24,18 @@ The first generated PCB draft is in [`v1-weiqi-sensor/`](v1-weiqi-sensor/). It i
 
 Generated outputs include a clean KiCad DRC report, STEP model, Gerbers, drill files, BOM, source dataset, and full-view 3D renders. This board should be reviewed mechanically and electrically before fabrication, but it is now a concrete V1 artifact for sparse detector geometry and bench wiring.
 
+## Prototype 1B: V2 ALS-PT19 32x32 Matrix
+
+The dense follow-up board is in [`v2-als-pt19-32x32/`](v2-als-pt19-32x32/). It uses the same sensor family documented in `CustomSensor`: `1024 x ALS-PT19` phototransistors with a row/column addressing model inspired by digiOBSCURA.
+
+- 32 rows by 32 columns, all populated.
+- Unrotated ALS-PT19 footprints on `2.54 mm` pitch so pads are aligned and do not overlap.
+- Row header pins align directly with row buses on `F.Cu`.
+- Column header pins align directly with column buses on `B.Cu` through per-pixel vias.
+- ADG732 row/column mux footprints are placed as addressing placeholders.
+
+This is the preferred first dense sensor-layout candidate. It still needs final schematic capture for the muxes, analog buffering, optical masking, crosstalk review, and firmware pin mapping before fabrication.
+
 ## Prototype 1: DIY Event Tile
 
 Adapt the `CustomSensor` concept into one small tile:

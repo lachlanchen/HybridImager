@@ -1,0 +1,18 @@
+(kicad_sch
+	(version 20231120)
+	(generator "hybridimager-v2-generator")
+	(generator_version "1.0")
+	(uuid "ee5aa77c-7709-5a87-a563-dacbfbbdf2a5")
+	(paper "A4")
+	(title_block
+		(title "HybridImager V2 ALS-PT19 32x32 Aligned Sensor Board")
+		(date "2026-06-08")
+		(rev "0.2.0-draft")
+	)
+	(lib_symbols)
+	(text "Board-first schematic stub. V2 uses the CustomSensor/digiOBSCURA ALS-PT19 32x32 matrix idea, but aligns all pads and headers on a 2.54 mm grid for cleaner routing and probing." (at 30 40 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "aaa7d6ea-6bb8-5813-81c0-c9462ffb3311")
+	)
+	(sheet_instances (path "/" (page "1")))
+)

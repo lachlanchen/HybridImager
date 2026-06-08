@@ -41,6 +41,7 @@ Paquete de revisión: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/
 | Artículo conceptual | `publications/hybrid_camera_concept.pdf` |
 | Revisión de cámaras abiertas | `publications/open_camera_project_survey.pdf` |
 | Placa sensora dispersa V1 | `hardware/v1-weiqi-sensor/` |
+| Matriz ALS-PT19 alineada V2 | `hardware/v2-als-pt19-32x32/` |
 | Notas de investigación | `references/` |
 | Diagramas deterministas | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Plan de hardware | `hardware/board_architecture.md` |

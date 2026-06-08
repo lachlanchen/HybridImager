@@ -1,0 +1,7 @@
+Id,Designator,Quantity,Footprint,Designation,Status
+1,Q0101-Q3232,1024,ALS-PT19,ALS-PT19 phototransistor,CustomSensor reference
+2,JROW,1,Aligned_Row_Header_1x32_2.54mm,Row edge header aligned to sensor rows,draft
+3,JCOL,1,Aligned_Col_Header_1x32_2.54mm,Column edge header aligned to sensor columns,draft
+4,JCTL,1,Control_Header_1x13_3mm,"Address, mux, power, and analog I/O header",draft
+5,"UROW,UCOL",2,ADG732_TQFP48_PLACEHOLDER,32:1 row/column analog mux placeholder,not routed
+6,H1-H4,4,M3 NPTH,Mounting holes,draft

@@ -41,6 +41,7 @@ Review-Paket: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) enthä
 | Konzeptpapier | `publications/hybrid_camera_concept.pdf` |
 | Open-Camera-Studie | `publications/open_camera_project_survey.pdf` |
 | V1-Sparse-Sensorplatine | `hardware/v1-weiqi-sensor/` |
+| V2 ausgerichtete ALS-PT19-Matrix | `hardware/v2-als-pt19-32x32/` |
 | Forschungsnotizen | `references/` |
 | Deterministische Diagramme | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Hardwareplan | `hardware/board_architecture.md` |

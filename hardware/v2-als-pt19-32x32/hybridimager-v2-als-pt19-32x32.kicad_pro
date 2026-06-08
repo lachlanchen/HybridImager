@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "filename": "hybridimager-v2-als-pt19-32x32.kicad_pro",
+    "version": 1
+  },
+  "board": {
+    "design_settings": {
+      "rule_severities": {
+        "lib_footprint_mismatch": "ignore",
+        "lib_footprint_issues": "ignore",
+        "missing_courtyard": "ignore",
+        "silk_over_copper": "ignore"
+      }
+    }
+  }
+}

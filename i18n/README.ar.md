@@ -41,6 +41,7 @@ HybridImager مساحة بحث وتصميم لكاشف علمي مختلط. يج
 | ورقة المفهوم | `publications/hybrid_camera_concept.pdf` |
 | مسح مشاريع الكاميرات المفتوحة | `publications/open_camera_project_survey.pdf` |
 | لوحة مستشعر متناثرة V1 | `hardware/v1-weiqi-sensor/` |
+| مصفوفة ALS-PT19 مصطفة V2 | `hardware/v2-als-pt19-32x32/` |
 | ملاحظات البحث | `references/` |
 | الرسوم الحتمية | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | خطة العتاد | `hardware/board_architecture.md` |

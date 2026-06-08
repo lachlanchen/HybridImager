@@ -1,0 +1,25 @@
+Drill report for hybridimager-v2-als-pt19-32x32.kicad_pcb
+Created on 2026-06-08T12:14:22
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'hybridimager-v2-als-pt19-32x32.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (1024 holes))
+    T2  0.700mm  0.0276"  (64 holes))
+    T3  0.750mm  0.0295"  (13 holes))
+
+    Total plated holes count 1101
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T4  3.200mm  0.1260"  (4 holes))
+
+    Total unplated holes count 4
