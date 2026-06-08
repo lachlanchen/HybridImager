@@ -26,12 +26,21 @@ HybridImager là không gian nghiên cứu và thiết kế cho một bộ dò k
 - **Nhánh khung hình:** mô-đun màn trập toàn cục cho chi tiết ảnh, hiệu chuẩn và kiểm tra trực quan.
 - **Lớp hợp nhất:** luồng có dấu thời gian với phơi sáng, gain, hồ sơ hiệu chuẩn, trigger và siêu dữ liệu mẫu.
 
+## Bo mạch cảm biến V1
+
+![Bản render KiCad HybridImager V1](../hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+Bản nháp bo mạch đầu tiên là carrier cảm biến thưa kiểu **Weiqi** được tạo bằng KiCad, có 21 vị trí bộ dò điểm ảnh đơn thay vì chỉ một bucket trung tâm. Nó có pad tín hiệu theo từng vị trí, đường hồi tiếp đất rõ ràng, ba placeholder AFE, một placeholder định thời QFN, SMA sync in/out, header nguồn/sync và header mở rộng 2x20.
+
+Gói rà soát: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) chứa bo KiCad, dataset, BOM, DRC sạch, STEP, Gerber, file khoan và render toàn cảnh.
+
 ## Nội dung hiện tại
 
 | Khu vực | Vị trí |
 | --- | --- |
 | Bài viết ý tưởng | `publications/hybrid_camera_concept.pdf` |
 | Khảo sát camera mở | `publications/open_camera_project_survey.pdf` |
+| Bo cảm biến thưa V1 | `hardware/v1-weiqi-sensor/` |
 | Ghi chú nghiên cứu | `references/` |
 | Sơ đồ xác định | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Kế hoạch phần cứng | `hardware/board_architecture.md` |

@@ -26,12 +26,21 @@ HybridImager es un espacio de investigación y diseño para un detector científ
 - **Rama de fotogramas:** módulos de obturador global para textura, calibración e inspección visual.
 - **Capa de fusión:** flujos temporizados con exposición, ganancia, perfil de calibración, disparo y metadatos de patrón.
 
+## Placa sensora V1
+
+![Render KiCad de HybridImager V1](../hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+El primer borrador de placa es un portador sensor disperso tipo **Weiqi** generado en KiCad, con 21 sitios de detector de píxel único y no un único bucket central. Incluye pads de señal por sitio, retorno de tierra explícito, tres placeholders AFE, un placeholder QFN de temporización, SMA de sincronización, cabecera de alimentación/sync y expansión 2x20.
+
+Paquete de revisión: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) contiene la placa KiCad, dataset, BOM, DRC limpio, STEP, Gerbers, taladros y renders completos.
+
 ## Contenido actual
 
 | Área | Ubicación |
 | --- | --- |
 | Artículo conceptual | `publications/hybrid_camera_concept.pdf` |
 | Revisión de cámaras abiertas | `publications/open_camera_project_survey.pdf` |
+| Placa sensora dispersa V1 | `hardware/v1-weiqi-sensor/` |
 | Notas de investigación | `references/` |
 | Diagramas deterministas | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Plan de hardware | `hardware/board_architecture.md` |

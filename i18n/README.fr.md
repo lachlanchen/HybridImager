@@ -26,12 +26,21 @@ HybridImager est un espace de recherche et de conception pour un détecteur scie
 - **Branche image :** modules à obturateur global pour la texture, la calibration et l'inspection lisible.
 - **Couche de fusion :** flux horodatés avec exposition, gain, profil de calibration, déclenchement et métadonnées de motif.
 
+## Carte capteur V1
+
+![Rendu KiCad de HybridImager V1](../hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+Le premier brouillon de carte est un support capteur clairsemé de type **Weiqi**, généré avec KiCad, avec 21 sites de détecteur à pixel unique plutôt qu'un seul bucket central. Il inclut des pads de signal par site, un retour de masse explicite, trois emplacements AFE, un emplacement QFN de temporisation, des SMA de synchronisation, un connecteur alimentation/sync et une extension 2x20.
+
+Paquet de revue : [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) contient la carte KiCad, le dataset, la BOM, le DRC propre, le STEP, les Gerbers, les perçages et les rendus complets.
+
 ## Contenu actuel
 
 | Zone | Emplacement |
 | --- | --- |
 | Article conceptuel | `publications/hybrid_camera_concept.pdf` |
 | Revue des caméras ouvertes | `publications/open_camera_project_survey.pdf` |
+| Carte capteur clairsemée V1 | `hardware/v1-weiqi-sensor/` |
 | Notes de recherche | `references/` |
 | Diagrammes déterministes | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Plan matériel | `hardware/board_architecture.md` |

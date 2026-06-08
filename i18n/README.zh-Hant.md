@@ -26,12 +26,21 @@ HybridImager 是面向混合科學探測器的研究與設計工作區。它把�
 - **影格分支：** 全域快門模組提供紋理、校準與可讀檢查影像。
 - **融合層：** 帶時間戳的資料流，包含曝光、增益、校準設定、觸發與圖案中繼資料。
 
+## V1 感測器板
+
+![HybridImager V1 KiCad 渲染](../hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+第一版板卡草案是 KiCad 生成的 **圍棋式稀疏感測器載板**，包含 21 個單像素探測器位置，而不是只有一個中央 bucket。它包含每個探測點的訊號焊盤、明確的接地回流、三個 AFE 佔位、一個 QFN 定時佔位、SMA 同步輸入/輸出、電源/同步排針和 2x20 擴充排針。
+
+審查包：[`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) 包含 KiCad 板、資料集、BOM、乾淨的 DRC、STEP、Gerber、鑽孔檔和完整視角渲染。
+
 ## 目前內容
 
 | 區域 | 位置 |
 | --- | --- |
 | 概念論文 | `publications/hybrid_camera_concept.pdf` |
 | 開放相機專案調研 | `publications/open_camera_project_survey.pdf` |
+| V1 稀疏感測器板 | `hardware/v1-weiqi-sensor/` |
 | 研究筆記 | `references/` |
 | 確定性生成圖 | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | 硬體計畫 | `hardware/board_architecture.md` |

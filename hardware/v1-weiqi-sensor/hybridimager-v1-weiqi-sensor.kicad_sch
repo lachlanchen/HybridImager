@@ -1,0 +1,18 @@
+(kicad_sch
+	(version 20231120)
+	(generator "hybridimager-v1-generator")
+	(generator_version "1.0")
+	(uuid "6176534d-43da-5bec-b055-f006ead8dc13")
+	(paper "A4")
+	(title_block
+		(title "HybridImager V1 Weiqi Sparse Sensor Board")
+		(date "2026-06-08")
+		(rev "0.1.0-draft")
+	)
+	(lib_symbols)
+	(text "Board-first schematic stub. V1 validates sparse single-pixel placement, sync connectors, and AFE/mezzanine mechanical space before detailed analog design." (at 30 40 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "11d1b4a5-c682-531f-a1e3-f93c59a8d35f")
+	)
+	(sheet_instances (path "/" (page "1")))
+)

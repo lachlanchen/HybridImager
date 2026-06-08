@@ -26,12 +26,21 @@ HybridImager is a research and design workspace for a mixed scientific detector.
 - **Frame branch:** global-shutter frame modules for texture, calibration, and human-readable inspection.
 - **Fusion layer:** timestamped streams with exposure, gain, calibration profile, trigger, and pattern metadata.
 
+## V1 Sensor Board
+
+![HybridImager V1 KiCad render](hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+The first board draft is a KiCad-generated **Weiqi sparse sensor carrier** with 21 single-pixel detector sites, not one central bucket only. It includes per-site signal pads, explicit ground routing, three AFE placeholders, a QFN timing placeholder, SMA sync in/out, power/sync header, and a 2x20 expansion header for later event/frame/tile work.
+
+Review package: [`hardware/v1-weiqi-sensor/`](hardware/v1-weiqi-sensor/) contains the KiCad board, dataset, BOM, clean DRC JSON, STEP model, Gerbers, drill files, and full-view renders.
+
 ## Current Contents
 
 | Area | Location |
 | --- | --- |
 | Concept paper | `publications/hybrid_camera_concept.pdf` |
 | Open camera survey | `publications/open_camera_project_survey.pdf` |
+| V1 sparse sensor board | `hardware/v1-weiqi-sensor/` |
 | Research notes | `references/` |
 | Deterministic diagrams | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Hardware plan | `hardware/board_architecture.md` |

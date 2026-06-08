@@ -26,12 +26,21 @@ HybridImager مساحة بحث وتصميم لكاشف علمي مختلط. يج
 - **فرع الإطارات:** وحدات إطارات ذات غالق عام للملمس، والمعايرة، والفحص البشري.
 - **طبقة الدمج:** تدفقات ذات طابع زمني مع التعريض، والكسب، وملف المعايرة، والمشغل، وبيانات النمط.
 
+## لوحة المستشعر V1
+
+![عرض KiCad لـ HybridImager V1](../hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+المسودة الأولى للوحة هي حاملة مستشعرات متناثرة بنمط **Weiqi** مولدة في KiCad، وفيها 21 موقع كاشف بكسل واحد بدلا من bucket مركزي واحد فقط. تتضمن Pads إشارة لكل موقع، ومسار أرضي واضحا، وثلاثة مواضع AFE، وموضع توقيت QFN، وSMA للمزامنة دخولا وخروجا، وموصل طاقة/مزامنة، وموصل توسعة 2x20.
+
+حزمة المراجعة: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) تحتوي لوحة KiCad، ومجموعة البيانات، وBOM، وDRC نظيفا، وSTEP، وGerbers، وملفات الحفر، وعروض الرؤية الكاملة.
+
 ## المحتوى الحالي
 
 | المجال | الموقع |
 | --- | --- |
 | ورقة المفهوم | `publications/hybrid_camera_concept.pdf` |
 | مسح مشاريع الكاميرات المفتوحة | `publications/open_camera_project_survey.pdf` |
+| لوحة مستشعر متناثرة V1 | `hardware/v1-weiqi-sensor/` |
 | ملاحظات البحث | `references/` |
 | الرسوم الحتمية | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | خطة العتاد | `hardware/board_architecture.md` |

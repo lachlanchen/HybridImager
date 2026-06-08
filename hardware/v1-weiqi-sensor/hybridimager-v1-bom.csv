@@ -1,0 +1,9 @@
+Id,Designator,Quantity,Footprint,Designation,Status
+1,PD01-PD21,21,Sparse_SP_D3_Photodiode,3 mm photodiode-class sparse single-pixel detector,placeholder
+2,TP01-TP21,21,TP_1.7mm_SMD,Per-site detector signal probe pad,draft
+3,U1-U3,3,SOIC-8,TIA / comparator AFE placeholder,not valued
+4,U4,1,QFN-48,MCU/FPGA timestamp placeholder,not valued
+5,J1,1,PinHeader_2x20_P2.54mm,AFE/event expansion header,draft
+6,J2,1,PinHeader_1x10_P2.54mm,Power and sync header,draft
+7,"J3,J4",2,Vertical SMA,Sync in/out coax connectors,draft
+8,H1-H4,4,M3 NPTH,Mounting holes,draft

@@ -26,12 +26,21 @@ HybridImager は、混合型科学検出器のための研究・設計ワーク�
 - **フレームブランチ:** テクスチャ、較正、人が読める確認のためのグローバルシャッターフレームモジュール。
 - **融合レイヤー:** 露光、ゲイン、較正プロファイル、トリガー、パターン情報を含むタイムスタンプ付きストリーム。
 
+## V1 センサーボード
+
+![HybridImager V1 KiCad レンダー](../hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+最初の基板ドラフトは KiCad で生成した **囲碁風の疎なセンサーキャリア**で、中央の bucket 1個だけではなく 21 個の単一画素検出器サイトを持ちます。各サイトの信号パッド、明示的なグラウンド配線、3 個の AFE プレースホルダー、QFN タイミングプレースホルダー、SMA 同期入出力、電源/同期ヘッダー、2x20 拡張ヘッダーを含みます。
+
+レビューパッケージ: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) には KiCad 基板、データセット、BOM、クリーンな DRC、STEP、Gerber、ドリルファイル、全体レンダーが含まれます。
+
 ## 現在の内容
 
 | 領域 | 場所 |
 | --- | --- |
 | コンセプト論文 | `publications/hybrid_camera_concept.pdf` |
 | オープンカメラ調査 | `publications/open_camera_project_survey.pdf` |
+| V1 疎センサーボード | `hardware/v1-weiqi-sensor/` |
 | 研究ノート | `references/` |
 | 決定的に生成される図 | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | ハードウェア計画 | `hardware/board_architecture.md` |

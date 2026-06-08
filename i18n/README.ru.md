@@ -26,12 +26,21 @@ HybridImager — это исследовательская и проектная
 - **Кадровая ветка:** модули с глобальным затвором для текстуры, калибровки и читаемой проверки.
 - **Слой слияния:** потоки с временными метками, экспозицией, усилением, профилем калибровки, триггером и метаданными паттерна.
 
+## Плата датчика V1
+
+![KiCad-рендер HybridImager V1](../hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+Первый черновик платы — созданный в KiCad разреженный сенсорный носитель типа **Weiqi** с 21 позицией однопиксельных детекторов, а не одним центральным bucket. Он включает сигнальные площадки для каждого сайта, явную разводку земли, три AFE-заготовки, QFN-заготовку тайминга, SMA sync in/out, разъем питания/sync и 2x20 расширение.
+
+Пакет для проверки: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) содержит KiCad-плату, dataset, BOM, чистый DRC, STEP, Gerbers, drill-файлы и полные рендеры.
+
 ## Текущее содержимое
 
 | Область | Расположение |
 | --- | --- |
 | Концептуальная статья | `publications/hybrid_camera_concept.pdf` |
 | Обзор открытых камер | `publications/open_camera_project_survey.pdf` |
+| Разреженная плата датчика V1 | `hardware/v1-weiqi-sensor/` |
 | Исследовательские заметки | `references/` |
 | Детерминированные схемы | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | План аппаратуры | `hardware/board_architecture.md` |

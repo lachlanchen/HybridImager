@@ -1,0 +1,8 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "MountingHole")(type "KiCad")(uri "/usr/share/kicad/footprints/MountingHole.pretty")(options "")(descr "KiCad mounting holes"))
+	(lib (name "Connector_PinHeader_2.54mm")(type "KiCad")(uri "/usr/share/kicad/footprints/Connector_PinHeader_2.54mm.pretty")(options "")(descr "KiCad 2.54 mm pin headers"))
+	(lib (name "Package_SO")(type "KiCad")(uri "/usr/share/kicad/footprints/Package_SO.pretty")(options "")(descr "KiCad SO packages"))
+	(lib (name "Package_DFN_QFN")(type "KiCad")(uri "/usr/share/kicad/footprints/Package_DFN_QFN.pretty")(options "")(descr "KiCad DFN/QFN packages"))
+	(lib (name "Connector_Coaxial")(type "KiCad")(uri "/usr/share/kicad/footprints/Connector_Coaxial.pretty")(options "")(descr "KiCad coaxial connectors"))
+)

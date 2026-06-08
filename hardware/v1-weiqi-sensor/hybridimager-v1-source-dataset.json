@@ -1,0 +1,52 @@
+{
+  "board": "hybridimager-v1-weiqi-sensor",
+  "version": "0.1.0-draft",
+  "date": "2026-06-08",
+  "scope": "First HybridImager sensor-board draft for optical bench experiments, not fabrication-approved.",
+  "single_pixel_policy": "Sparse multi-site bucket detector array, not one central detector only.",
+  "detector_array": {
+    "count": 21,
+    "grid": "7x7 conceptual Weiqi grid with 21 populated detector sites",
+    "pitch_mm": 8.5,
+    "footprint": "3 mm THT photodiode-class placeholder with adjacent signal testpad",
+    "recommended_first_detector_options": [
+      "low-capacitance silicon photodiode in 3 mm / TO-style package for bright optical bench tests",
+      "large-area low-noise photodiode module for bucket/spectral experiments after layout validation",
+      "SiPM/APD adapter as a later shielded daughterboard, not direct V1 default"
+    ]
+  },
+  "architecture": [
+    "Sparse single-pixel detector island on the front side.",
+    "Per-site signal testpads for direct TIA/comparator probing.",
+    "AFE placeholders for TIA gain banks.",
+    "QFN timing placeholder for MCU/FPGA timestamp authority.",
+    "2x20 expansion header for future analog/event tile mezzanine.",
+    "1x10 power/sync header and two SMA sync connectors."
+  ],
+  "validation_intent": [
+    "Confirm optical spacing and sparse reconstruction geometry.",
+    "Measure dark current/noise per site with external TIA fixtures.",
+    "Validate timestamp and trigger wiring before dense custom electronics.",
+    "Use this board as mechanical/electrical skeleton for the next detailed analog schematic."
+  ],
+  "known_limits": [
+    "Board-first schematic stub; detailed TIA/comparator values are not finalized.",
+    "Photodiode package is a render/placement placeholder, not a locked BOM part.",
+    "Expansion header pads are mechanical/electrical placeholders and not routed to all detector sites in this draft.",
+    "Human review is required before fabrication."
+  ],
+  "references": [
+    {
+      "name": "HybridImager board architecture",
+      "path": "hardware/board_architecture.md"
+    },
+    {
+      "name": "PCB and circuits notes",
+      "path": "references/pcb_and_circuits.md"
+    },
+    {
+      "name": "Open camera project survey",
+      "path": "references/open_camera_project_survey.md"
+    }
+  ]
+}

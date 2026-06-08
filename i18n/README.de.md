@@ -26,12 +26,21 @@ HybridImager ist ein Forschungs- und Design-Arbeitsbereich für einen gemischten
 - **Frame-Zweig:** Global-Shutter-Module für Textur, Kalibrierung und menschlich lesbare Kontrolle.
 - **Fusionsschicht:** Zeitgestempelte Streams mit Belichtung, Gain, Kalibrierprofil, Trigger und Pattern-Metadaten.
 
+## V1-Sensorplatine
+
+![HybridImager V1 KiCad-Render](../hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+Der erste Platinendraft ist ein in KiCad erzeugter **Weiqi**-Sparse-Sensorträger mit 21 Einzelpixel-Detektorpositionen, nicht nur einem zentralen Bucket. Er enthält Signalpads pro Position, explizite Masseführung, drei AFE-Platzhalter, einen QFN-Timing-Platzhalter, SMA-Sync-Anschlüsse, eine Power/Sync-Stiftleiste und eine 2x20-Erweiterung.
+
+Review-Paket: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/) enthält KiCad-Board, Dataset, BOM, sauberen DRC, STEP, Gerbers, Bohrdaten und Vollansicht-Renderings.
+
 ## Aktueller Inhalt
 
 | Bereich | Ort |
 | --- | --- |
 | Konzeptpapier | `publications/hybrid_camera_concept.pdf` |
 | Open-Camera-Studie | `publications/open_camera_project_survey.pdf` |
+| V1-Sparse-Sensorplatine | `hardware/v1-weiqi-sensor/` |
 | Forschungsnotizen | `references/` |
 | Deterministische Diagramme | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | Hardwareplan | `hardware/board_architecture.md` |

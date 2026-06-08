@@ -26,12 +26,21 @@ HybridImager는 혼합 과학 검출기를 위한 연구 및 설계 작업 공�
 - **프레임 브랜치:** 텍스처, 보정, 사람이 확인할 수 있는 검사를 위한 글로벌 셔터 프레임 모듈입니다.
 - **퓨전 레이어:** 노출, 게인, 보정 프로파일, 트리거, 패턴 메타데이터를 포함하는 타임스탬프 스트림입니다.
 
+## V1 센서 보드
+
+![HybridImager V1 KiCad 렌더](../hardware/v1-weiqi-sensor/artifacts/hybridimager-v1-kicad-render-full.png)
+
+첫 번째 보드 초안은 KiCad로 생성한 **바둑판형 희소 센서 캐리어**이며, 중앙 bucket 하나만이 아니라 21개의 단일 픽셀 검출기 사이트를 둡니다. 사이트별 신호 패드, 명시적 접지 배선, AFE 플레이스홀더 3개, QFN 타이밍 플레이스홀더, SMA 동기 입출력, 전원/동기 헤더, 2x20 확장 헤더를 포함합니다.
+
+검토 패키지: [`hardware/v1-weiqi-sensor/`](../hardware/v1-weiqi-sensor/)에는 KiCad 보드, 데이터셋, BOM, 깨끗한 DRC, STEP, Gerber, 드릴 파일, 전체 렌더가 포함됩니다.
+
 ## 현재 내용
 
 | 영역 | 위치 |
 | --- | --- |
 | 개념 논문 | `publications/hybrid_camera_concept.pdf` |
 | 오픈 카메라 조사 | `publications/open_camera_project_survey.pdf` |
+| V1 희소 센서 보드 | `hardware/v1-weiqi-sensor/` |
 | 연구 노트 | `references/` |
 | 결정론적 다이어그램 | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
 | 하드웨어 계획 | `hardware/board_architecture.md` |
