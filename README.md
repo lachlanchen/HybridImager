@@ -1,46 +1,87 @@
-# HybridCamera
+[English](README.md) · [العربية](i18n/README.ar.md) · [Español](i18n/README.es.md) · [Français](i18n/README.fr.md) · [日本語](i18n/README.ja.md) · [한국어](i18n/README.ko.md) · [Tiếng Việt](i18n/README.vi.md) · [中文 (简体)](i18n/README.zh-Hans.md) · [中文（繁體）](i18n/README.zh-Hant.md) · [Deutsch](i18n/README.de.md) · [Русский](i18n/README.ru.md)
 
-HybridCamera is a research and design workspace for a mixed sensing board: a high-dynamic-range single-pixel detector at the center, alternating event and frame-mode tiles around it, and optional spectral/electron-microscopy detector branches. The layout is intentionally "Weiqi-board" like: local pixels are arranged as a checkerboard of complementary sensing modes, while the central bucket detector supplies absolute intensity and high dynamic range.
+[![LazyingArt banner](https://github.com/lachlanchen/lachlanchen/raw/main/figs/banner.png)](https://github.com/lachlanchen/lachlanchen/blob/main/figs/banner.png)
 
-## Repository Layout
+# HybridImager
 
-- `init/` records what was copied from prior local work and how this repo was initialized.
-- `references/` contains cited research notes on event sensors, single-pixel imaging, PCB/circuit design, wiring, and reconstruction.
-- `publications/` contains the LaTeX concept paper.
-- `figures/` stores deterministic SVG/PNG diagrams plus AgInTi-generated concept images.
-- `hardware/`, `firmware/`, and `algorithms/` are implementation staging areas.
-- `copied-context/` preserves relevant snapshots from `CustomSensor`, `NanoMi`, and AppAutoAction notes.
+*Open hybrid scientific imaging: single-pixel, event, frame, and spectral sensing in one maintainable research stack.*
 
-## Prior Work Check
+[![Website](https://img.shields.io/badge/Website-lazying.art-111827?style=for-the-badge&logo=googlechrome&logoColor=white)](https://lazying.art)
+[![Concept Paper](https://img.shields.io/badge/PDF-Concept%20Paper-334155?style=for-the-badge&logo=latex&logoColor=white)](publications/hybrid_camera_concept.pdf)
+[![Survey](https://img.shields.io/badge/PDF-Open%20Camera%20Survey-0f766e?style=for-the-badge&logo=readthedocs&logoColor=white)](publications/open_camera_project_survey.pdf)
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-lachlanchen-ea4aaa?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/lachlanchen)
 
-Yes, `../CustomSensor` already contains related research. Its documents cover a digiOBSCURA 32x32 phototransistor camera, firmware differencing, comparator-assisted event mode, TIA/buffer upgrades, and a full event-sensor redesign path. This repo uses that work as the DIY baseline, but extends the scope to a hybrid scientific detector that combines single-pixel, spectral, frame, and event data streams.
+HybridImager is a research and design workspace for a mixed scientific detector. The concept combines a high-dynamic-range single-pixel bucket detector, event-camera timing, frame-camera texture, and optional spectral measurements under one synchronized data model.
 
-## Generate Figures and Paper
+| Donate | PayPal | Stripe |
+| --- | --- | --- |
+| [![Donate](https://img.shields.io/badge/Donate-LazyingArt-0EA5E9?style=for-the-badge&logo=kofi&logoColor=white)](https://chat.lazying.art/donate) | [![PayPal](https://img.shields.io/badge/PayPal-RongzhouChen-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/RongzhouChen) | [![Stripe](https://img.shields.io/badge/Stripe-Donate-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://buy.stripe.com/aFadR8gIaflgfQV6T4fw400) |
+
+## System Concept
+
+![Hybrid board layout](figures/hybrid_board_layout.png)
+
+- **Single-pixel branch:** a central low-noise detector/TIA path for absolute intensity, high dynamic range, and spectral or coded measurements.
+- **Event branch:** asynchronous temporal contrast from commercial event cameras first, then open FPGA interfaces when practical.
+- **Frame branch:** global-shutter frame modules for texture, calibration, and human-readable inspection.
+- **Fusion layer:** timestamped streams with exposure, gain, calibration profile, trigger, and pattern metadata.
+
+## Current Contents
+
+| Area | Location |
+| --- | --- |
+| Concept paper | `publications/hybrid_camera_concept.pdf` |
+| Open camera survey | `publications/open_camera_project_survey.pdf` |
+| Research notes | `references/` |
+| Deterministic diagrams | `figures/hybrid_board_layout.*`, `figures/hybrid_signal_chain.*` |
+| Hardware plan | `hardware/board_architecture.md` |
+| Reconstruction plan | `algorithms/reconstruction_plan.md` |
+| Prior context | `copied-context/` |
+| Open project mirrors | `external/` as git submodules |
+
+## Quick Start
 
 ```bash
-python3 scripts/draw_hybrid_camera_diagrams.py
-cd publications
-pdflatex -interaction=nonstopmode -halt-on-error hybrid_camera_concept.tex
-pdflatex -interaction=nonstopmode -halt-on-error open_camera_project_survey.tex
+git clone --recurse-submodules https://github.com/lachlanchen/HybridImager.git
+cd HybridImager
+make all
 ```
 
-AgInTi concept art can be generated with:
+If the repository is already cloned:
 
 ```bash
-node ../Agent/AgInTiFlow/bin/aginti-cli.js image --json --provider venice \
-  --format png --output-dir figures/aginti --output-stem hybrid-camera-concept \
-  --aspect-ratio 16:9 --image-size 2K "technical hybrid scientific camera board..."
+git submodule update --init --recursive
+make survey
 ```
 
-## Design Thesis
+## Research Baseline
 
-The first build should not attempt a full custom event-imager ASIC. Use commercial event/frame modules or tiled photodiode/comparator subarrays, a central low-noise TIA bucket detector, synchronized ADC/event capture, and calibration targets. The reconstruction layer then fuses sparse event timing, frame texture, single-pixel absolute intensity, and spectral measurements into a shared latent scene or scan grid.
+The strongest open single-pixel path is **ONE-PIX** plus **ONE-PIX_hardware**. For event vision, the realistic first build uses commercial event cameras with **OpenEB**, **jAER**, **v2e**, and **E2VID**. For frame hardware, the useful open references are **OneInchEye**, **Antmicro OV9281**, **AXIOM Beta**, and **Seeed reCamera**.
 
-## Open Project Survey
+The project does not assume a custom event-sensor ASIC in the first stage. It starts with open board-level synchronization, open data formats, open reconstruction, and reusable mechanical/PCB references.
 
-The current survey is in `references/open_camera_project_survey.md` and compiled
-as `publications/open_camera_project_survey.pdf`. It documents cloned open
-single-pixel, event-camera, and frame-camera projects, plus buying/sourcing notes
-for ONE-PIX, UPOLabs, DLP/DMD parts, Prophesee/Sony IMX636 event cameras, and
-Shapr3D export guidance. Preferred Shapr3D export package: `STEP`, native
-`.shapr`, `Parasolid`, `DXF from sketch`, and one `3MF` or `STL` preview.
+## CAD And Hardware Notes
+
+Preferred Shapr3D export package for editable mechanical work:
+
+```text
+STEP + native .shapr + Parasolid + DXF from sketch + 3MF/STL preview
+```
+
+Use STEP as the main interchange format, Parasolid as the high-fidelity solid backup, DXF for 2D outlines and plates, and STL/3MF only for print or mesh preview.
+
+## Build Commands
+
+```bash
+make figures   # regenerate deterministic diagrams
+make paper     # compile the HybridImager concept paper
+make survey    # compile the open camera project survey
+make all       # run paper and survey builds
+make clean     # remove LaTeX build byproducts
+```
+
+## Status
+
+This is an early research workspace, not a certified imaging product. The immediate goal is a maintainable experiment pipeline for optical and microscopy setups: build with available modules, synchronize cleanly, reconstruct reproducibly, and only integrate custom hardware after the data contract is stable.
+
+Build less. Image more.
