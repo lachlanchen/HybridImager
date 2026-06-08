@@ -80,6 +80,19 @@ make all
 make clean
 ```
 
+## Cita
+
+Si usas HybridImager en investigación, cita el repositorio. GitHub lee [CITATION.cff](../CITATION.cff) y muestra el panel **Cite this repository** en la página del repositorio.
+
+```bibtex
+@software{chen_hybridimager_2026,
+  author = {Chen, Lachlan},
+  title = {HybridImager: Open Hybrid Scientific Imaging Research Workspace},
+  year = {2026},
+  url = {https://github.com/lachlanchen/HybridImager}
+}
+```
+
 ## Estado
 
 Este es un espacio de investigación temprano, no un producto de imagen certificado. El objetivo inmediato es una tubería experimental mantenible para óptica y microscopía: construir con módulos disponibles, sincronizar limpiamente, reconstruir de forma reproducible e integrar hardware personalizado solo cuando el contrato de datos sea estable.

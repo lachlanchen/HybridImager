@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use HybridImager, please cite this repository."
+type: software
+title: "HybridImager: Open Hybrid Scientific Imaging Research Workspace"
+version: 0.1.0
+date-released: 2026-06-08
+abstract: "HybridImager is an open research workspace for hybrid scientific imaging that combines single-pixel, event, frame, and spectral sensing under one synchronized data model."
+authors:
+  - family-names: Chen
+    given-names: Lachlan
+    alias: lachlanchen
+repository-code: "https://github.com/lachlanchen/HybridImager"
+url: "https://lazying.art"
+keywords:
+  - hybrid imaging
+  - single-pixel imaging
+  - event camera
+  - event-based vision
+  - hyperspectral imaging
+  - computational imaging
+  - scientific instrumentation
+  - open hardware

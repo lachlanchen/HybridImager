@@ -80,6 +80,19 @@ make all
 make clean
 ```
 
+## الاستشهاد
+
+إذا استخدمت HybridImager في بحثك، فاستشهد بالمستودع. يقرأ GitHub ملف [CITATION.cff](../CITATION.cff) ويعرض لوحة **Cite this repository** في صفحة المستودع.
+
+```bibtex
+@software{chen_hybridimager_2026,
+  author = {Chen, Lachlan},
+  title = {HybridImager: Open Hybrid Scientific Imaging Research Workspace},
+  year = {2026},
+  url = {https://github.com/lachlanchen/HybridImager}
+}
+```
+
 ## الحالة
 
 هذه مساحة بحث مبكرة وليست منتجا تصويريا معتمدا. الهدف المباشر هو خط تجارب قابل للصيانة للأنظمة البصرية والمجهرية: البناء بوحدات متاحة، والمزامنة النظيفة، وإعادة البناء القابلة للتكرار، ثم دمج العتاد المخصص فقط بعد استقرار عقد البيانات.

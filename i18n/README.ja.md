@@ -80,6 +80,19 @@ make all
 make clean
 ```
 
+## 引用
+
+研究で HybridImager を使用する場合は、このリポジトリを引用してください。GitHub は [CITATION.cff](../CITATION.cff) を読み取り、リポジトリページに **Cite this repository** パネルを表示します。
+
+```bibtex
+@software{chen_hybridimager_2026,
+  author = {Chen, Lachlan},
+  title = {HybridImager: Open Hybrid Scientific Imaging Research Workspace},
+  year = {2026},
+  url = {https://github.com/lachlanchen/HybridImager}
+}
+```
+
 ## 状態
 
 これは初期研究ワークスペースであり、認証済みのイメージング製品ではありません。直近の目的は、光学・顕微鏡実験のための保守可能なパイプラインを作ることです。入手可能なモジュールで構築し、きれいに同期し、再現可能に再構成し、データ契約が安定してから専用ハードウェアを統合します。

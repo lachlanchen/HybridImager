@@ -80,6 +80,19 @@ make all
 make clean
 ```
 
+## 인용
+
+연구에서 HybridImager를 사용한다면 이 저장소를 인용하세요. GitHub는 [CITATION.cff](../CITATION.cff)를 읽어 저장소 페이지에 **Cite this repository** 패널을 표시합니다.
+
+```bibtex
+@software{chen_hybridimager_2026,
+  author = {Chen, Lachlan},
+  title = {HybridImager: Open Hybrid Scientific Imaging Research Workspace},
+  year = {2026},
+  url = {https://github.com/lachlanchen/HybridImager}
+}
+```
+
 ## 상태
 
 이 저장소는 초기 연구 작업 공간이며 인증된 이미징 제품이 아닙니다. 즉각적인 목표는 광학 및 현미경 실험을 위한 유지 가능한 파이프라인입니다. 사용 가능한 모듈로 만들고, 깨끗하게 동기화하고, 재현 가능하게 재구성하며, 데이터 계약이 안정된 뒤에만 맞춤형 하드웨어를 통합합니다.

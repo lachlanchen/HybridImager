@@ -80,6 +80,19 @@ make all
 make clean
 ```
 
+## Citation
+
+Si vous utilisez HybridImager dans une recherche, citez le dépôt. GitHub lit [CITATION.cff](../CITATION.cff) et affiche le panneau **Cite this repository** sur la page du dépôt.
+
+```bibtex
+@software{chen_hybridimager_2026,
+  author = {Chen, Lachlan},
+  title = {HybridImager: Open Hybrid Scientific Imaging Research Workspace},
+  year = {2026},
+  url = {https://github.com/lachlanchen/HybridImager}
+}
+```
+
 ## Statut
 
 C'est un espace de recherche précoce, pas un produit d'imagerie certifié. L'objectif immédiat est une chaîne expérimentale maintenable pour l'optique et la microscopie : construire avec des modules disponibles, synchroniser proprement, reconstruire de manière reproductible, puis intégrer du matériel personnalisé seulement lorsque le contrat de données est stable.

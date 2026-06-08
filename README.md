@@ -80,6 +80,19 @@ make all       # run paper and survey builds
 make clean     # remove LaTeX build byproducts
 ```
 
+## Citation
+
+If you use HybridImager in research, cite the repository. GitHub reads [CITATION.cff](CITATION.cff) and shows a **Cite this repository** panel on the repo page.
+
+```bibtex
+@software{chen_hybridimager_2026,
+  author = {Chen, Lachlan},
+  title = {HybridImager: Open Hybrid Scientific Imaging Research Workspace},
+  year = {2026},
+  url = {https://github.com/lachlanchen/HybridImager}
+}
+```
+
 ## Status
 
 This is an early research workspace, not a certified imaging product. The immediate goal is a maintainable experiment pipeline for optical and microscopy setups: build with available modules, synchronize cleanly, reconstruct reproducibly, and only integrate custom hardware after the data contract is stable.

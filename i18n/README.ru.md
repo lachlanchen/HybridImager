@@ -80,6 +80,19 @@ make all
 make clean
 ```
 
+## Цитирование
+
+Если вы используете HybridImager в исследовании, процитируйте этот репозиторий. GitHub читает [CITATION.cff](../CITATION.cff) и показывает панель **Cite this repository** на странице репозитория.
+
+```bibtex
+@software{chen_hybridimager_2026,
+  author = {Chen, Lachlan},
+  title = {HybridImager: Open Hybrid Scientific Imaging Research Workspace},
+  year = {2026},
+  url = {https://github.com/lachlanchen/HybridImager}
+}
+```
+
 ## Статус
 
 Это ранняя исследовательская среда, а не сертифицированный продукт визуализации. Ближайшая цель — поддерживаемый экспериментальный pipeline для оптики и микроскопии: строить из доступных модулей, чисто синхронизировать, воспроизводимо реконструировать и интегрировать кастомную аппаратуру только после стабилизации контракта данных.

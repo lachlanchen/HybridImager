@@ -80,6 +80,19 @@ make all
 make clean
 ```
 
+## 引用
+
+如果在研究中使用 HybridImager，請引用本倉庫。GitHub 會讀取 [CITATION.cff](../CITATION.cff)，並在倉庫頁面顯示 **Cite this repository** 面板。
+
+```bibtex
+@software{chen_hybridimager_2026,
+  author = {Chen, Lachlan},
+  title = {HybridImager: Open Hybrid Scientific Imaging Research Workspace},
+  year = {2026},
+  url = {https://github.com/lachlanchen/HybridImager}
+}
+```
+
 ## 狀態
 
 這是早期研究工作區，不是經過認證的成像產品。當前目標是為光學與顯微實驗建立可維護的流程：用現成模組搭建、乾淨同步、可重複重建，並在資料契約穩定之後再整合客製硬體。

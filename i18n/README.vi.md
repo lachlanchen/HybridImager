@@ -80,6 +80,19 @@ make all
 make clean
 ```
 
+## Trích dẫn
+
+Nếu dùng HybridImager trong nghiên cứu, hãy trích dẫn kho mã này. GitHub đọc [CITATION.cff](../CITATION.cff) và hiển thị bảng **Cite this repository** trên trang kho mã.
+
+```bibtex
+@software{chen_hybridimager_2026,
+  author = {Chen, Lachlan},
+  title = {HybridImager: Open Hybrid Scientific Imaging Research Workspace},
+  year = {2026},
+  url = {https://github.com/lachlanchen/HybridImager}
+}
+```
+
 ## Trạng thái
 
 Đây là không gian nghiên cứu giai đoạn đầu, không phải sản phẩm hình ảnh đã được chứng nhận. Mục tiêu trước mắt là một pipeline thí nghiệm dễ bảo trì cho quang học và kính hiển vi: xây bằng mô-đun sẵn có, đồng bộ sạch, tái tạo lặp lại và chỉ tích hợp phần cứng tùy chỉnh sau khi hợp đồng dữ liệu ổn định.
