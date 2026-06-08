@@ -10,12 +10,25 @@ These sources anchor the current HybridCamera research notes.
 - Prophesee/Sony IMX636 specifications: https://www.prophesee.ai/event-based-sensor-imx636-sony-prophesee/
 - OpenEB event-vision framework: https://github.com/prophesee-ai/openeb
 - Prophesee event-based getting-started examples: https://github.com/prophesee-ai/event-based-get-started
+- jAER Address-Event Representation tools: https://github.com/SensorsINI/jaer
+- openEye-CamSI open camera/event interface roadmap: https://github.com/chili-chips-ba/openeye-CamSI
 
 ## Single-Pixel and Computational Imaging
 
 - Edgar, Gibson, Padgett, "Principles and prospects for single-pixel imaging": https://www.nature.com/articles/s41566-018-0300-7
 - Cascaded compressed-sensing single-pixel camera: https://link.springer.com/article/10.1186/s43074-024-00152-5
+- ONE-PIX open single-pixel hyperspectral camera: https://github.com/PhotonicsOpenProjects/ONE-PIX
+- ONE-PIX hardware and premounted kit reference: https://github.com/PhotonicsOpenProjects/ONE-PIX_hardware
 - SPyRiT single-pixel reconstruction toolbox: https://github.com/openspyrit/spyrit
+- UPOLabs DMD single-pixel imaging experiment system: https://www.upolabs.com/ProductsStd_769.html
+- TI DLP LightCrafter DLPC900 EVM: https://www.ti.com/product/DLPLCRC900EVM/part-details/DLPLCRC900EVM
+
+## Open Frame-Camera Hardware
+
+- Antmicro OV9281 Dual Camera Board: https://github.com/antmicro/ov9281-camera-board
+- OneInchEye Raspberry Pi IMX283 board: https://github.com/will127534/OneInchEye
+- AXIOM Beta hardware: https://github.com/apertus-open-source-cinema/beta-hardware
+- Seeed OSHW reCamera Series: https://github.com/Seeed-Studio/OSHW-reCamera-Series
 
 ## Reconstruction
 

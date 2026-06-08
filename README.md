@@ -21,6 +21,7 @@ Yes, `../CustomSensor` already contains related research. Its documents cover a 
 python3 scripts/draw_hybrid_camera_diagrams.py
 cd publications
 pdflatex -interaction=nonstopmode -halt-on-error hybrid_camera_concept.tex
+pdflatex -interaction=nonstopmode -halt-on-error open_camera_project_survey.tex
 ```
 
 AgInTi concept art can be generated with:
@@ -34,3 +35,12 @@ node ../Agent/AgInTiFlow/bin/aginti-cli.js image --json --provider venice \
 ## Design Thesis
 
 The first build should not attempt a full custom event-imager ASIC. Use commercial event/frame modules or tiled photodiode/comparator subarrays, a central low-noise TIA bucket detector, synchronized ADC/event capture, and calibration targets. The reconstruction layer then fuses sparse event timing, frame texture, single-pixel absolute intensity, and spectral measurements into a shared latent scene or scan grid.
+
+## Open Project Survey
+
+The current survey is in `references/open_camera_project_survey.md` and compiled
+as `publications/open_camera_project_survey.pdf`. It documents cloned open
+single-pixel, event-camera, and frame-camera projects, plus buying/sourcing notes
+for ONE-PIX, UPOLabs, DLP/DMD parts, Prophesee/Sony IMX636 event cameras, and
+Shapr3D export guidance. Preferred Shapr3D export package: `STEP`, native
+`.shapr`, `Parasolid`, `DXF from sketch`, and one `3MF` or `STL` preview.

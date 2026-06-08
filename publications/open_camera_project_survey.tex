@@ -1,0 +1,151 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{array}
+
+\title{Open Single-Pixel, Event, and Image-Sensor Project Survey}
+\author{HybridCamera Research Workspace}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This survey identifies practical open-source and buyable building blocks for a
+hybrid scientific camera that combines a single-pixel bucket detector, event
+vision, and frame imaging. The central conclusion is pragmatic: single-pixel
+hardware is available in a credible open kit, event-camera software is open but
+event-sensor silicon is still commercial, and open frame-camera projects are the
+best source of PCB, enclosure, and synchronization patterns.
+\end{abstract}
+
+\section{Single-Pixel Camera Projects}
+
+The strongest project found is ONE-PIX, an open single-pixel hyperspectral kit.
+It projects coded patterns onto a scene, records the reflected spectrum with a
+single detector/spectrometer path, and reconstructs a hyperspectral cube. Its
+software repository includes Raspberry Pi control, GUI and CLI workflows,
+examples, and plugin interfaces. Its hardware repository includes laser-cut box
+plans, STL fixtures, and editable CAD for adapting the instrument. This makes
+ONE-PIX the best reference for the HybridCamera bucket/spectral branch.
+
+SPyRiT complements the hardware side. It is a Python toolbox for deep
+single-pixel image reconstruction, including neural reconstruction workflows
+that can be reused for coded bucket measurements. A small educational
+single-pixel-camera demo was also cloned as a minimal reference, but it should
+not be treated as the main instrument baseline.
+
+\section{Buying and Sourcing}
+
+For a complete single-pixel system, the best documented option is the premounted
+ONE-PIX kit linked from the hardware repository. UPOLabs also lists a DMD-based
+single-pixel imaging experiment system intended for teaching and research. For
+Taobao-style sourcing, the credible route is usually component sourcing rather
+than buying a polished single-pixel camera. The required parts are a DMD or DLP
+pattern source, photodiode/APD/PMT detector, low-noise transimpedance amplifier
+or lock-in amplifier, synchronized ADC/DAQ, lenses, calibration targets, and a
+rigid optical rail or enclosure. TI DLP LightCrafter controller boards are useful
+references for the DMD pattern-generation path.
+
+\section{Open Event-Camera Projects}
+
+No mature fully open event-sensor silicon project was found. The practical event
+path is to use commercial sensors or cameras with open software layers. OpenEB
+is the most important stack because it exposes event-device abstraction,
+streaming, visualization, event manipulation, machine-learning utilities, and
+Prophesee camera plugins. The Prophesee/Sony IMX636 is a buyable event sensor
+family with evaluation kits and published product specifications.
+
+jAER remains important for Address-Event Representation tooling and historical
+DVS/DAVIS workflows. v2e is useful before hardware arrives because it converts
+normal video into synthetic DVS events. E2VID is useful for reconstruction from
+events back to intensity frames. openEye-CamSI is the most relevant open
+hardware/gateware project because its roadmap explicitly targets an interface to
+an entry-level Prophesee/Sony event imaging sensor and Ethernet transfer.
+
+\section{Open Frame-Camera Hardware}
+
+Open frame-camera projects are more mature than open event-sensor hardware. The
+Antmicro OV9281 Dual Camera Board provides KiCad files for two global-shutter
+MIPI CSI-2 sensors. OneInchEye provides a Raspberry Pi camera board around the
+Sony IMX283 one-inch CMOS sensor, including KiCad and STEP assets. AXIOM Beta
+hardware provides a large modular open cinema-camera reference with sensor
+front-end boards, enclosure assets, and manufacturing files. Seeed's open
+reCamera series is useful as a compact modular AI-camera hardware reference, but
+the cloned repository did not verify an event-camera board.
+
+\section{HybridCamera Implications}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{p{0.22\linewidth}p{0.32\linewidth}p{0.34\linewidth}}
+\toprule
+Branch & Use now & Later target \\
+\midrule
+Single-pixel & ONE-PIX plus SPyRiT & Custom bucket detector and coded pattern API \\
+Event & OpenEB-capable event camera & openEye-CamSI-style FPGA interface \\
+Frame & OV9281, OneInchEye, reCamera, AXIOM references & Triggered global-shutter frame module \\
+Fusion & Timestamped stream logs & Shared reconstruction objective across modalities \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The first HybridCamera prototype should not wait for a custom ASIC. It should
+combine a central low-noise bucket detector, a commercial event camera or event
+module, and a frame camera under one hardware clock. Each record should include
+timestamp, source ID, exposure/gain, calibration profile, trigger metadata, and
+the optical pattern or scan position. Once this board-level data contract is
+stable, the project can decide whether a custom tile or chip is justified.
+
+\section{Shapr3D Export Guidance}
+
+For mechanical updates, export STEP as the main editable interchange format.
+Also export native Shapr3D files as the design archive and Parasolid files as a
+high-fidelity solid backup. Export DXF from sketches for 2D plates, optical
+mounts, laser-cut profiles, and PCB outline constraints. Export 3MF or STL only
+for printing and mesh preview. Export GLB or OBJ only for web previews, Blender
+renders, or documentation. IGES is a fallback if STEP fails. PDF, SVG, images,
+DWG, JT, and USDZ are useful only when a vendor or viewer specifically requests
+them.
+
+The preferred package for this project is therefore: STEP, native Shapr3D,
+Parasolid, DXF sketches, and one 3MF or STL preview for each part.
+
+\section{Cloned Reference Set}
+
+\begin{itemize}
+\item \texttt{external/one-pix}: single-pixel hyperspectral software.
+\item \texttt{external/one-pix-hardware}: ONE-PIX mechanical and build files.
+\item \texttt{external/spyrit}: single-pixel reconstruction toolbox.
+\item \texttt{external/openeb}: event-camera SDK modules.
+\item \texttt{external/event-based-get-started}: event-camera examples.
+\item \texttt{external/jaer}: AER/event-camera processing tools.
+\item \texttt{external/v2e}: video-to-event simulation.
+\item \texttt{external/rpg-e2vid}: event-to-frame reconstruction.
+\item \texttt{external/openeye-camsi}: open FPGA camera interface.
+\item \texttt{external/one-inch-eye}: open IMX283 frame-camera board.
+\item \texttt{external/ov9281-camera-board}: open OV9281 global-shutter board.
+\item \texttt{external/axiom-beta-hardware}: modular open camera hardware.
+\item \texttt{external/oshw-recamera-series}: modular open AI-camera hardware.
+\end{itemize}
+
+\begin{thebibliography}{14}
+\bibitem{onepix} PhotonicsOpenProjects, ``ONE-PIX,'' \url{https://github.com/PhotonicsOpenProjects/ONE-PIX}.
+\bibitem{onepixhardware} PhotonicsOpenProjects, ``ONE-PIX hardware,'' \url{https://github.com/PhotonicsOpenProjects/ONE-PIX_hardware}.
+\bibitem{spyrit} OpenSpyrit, ``SPyRiT,'' \url{https://github.com/openspyrit/spyrit}.
+\bibitem{upolabs} UPOLabs, ``Single-pixel imaging experiment system,'' \url{https://www.upolabs.com/ProductsStd_769.html}.
+\bibitem{ti} Texas Instruments, ``DLPC900 DLP LightCrafter evaluation module,'' \url{https://www.ti.com/product/DLPLCRC900EVM/part-details/DLPLCRC900EVM}.
+\bibitem{openeb} Prophesee, ``OpenEB,'' \url{https://github.com/prophesee-ai/openeb}.
+\bibitem{imx636} Prophesee, ``Sony IMX636 co-developed with Prophesee,'' \url{https://www.prophesee.ai/event-based-sensor-imx636-sony-prophesee/}.
+\bibitem{jaer} SensorsINI, ``jAER,'' \url{https://github.com/SensorsINI/jaer}.
+\bibitem{v2e} SensorsINI, ``v2e,'' \url{https://github.com/SensorsINI/v2e}.
+\bibitem{e2vid} UZH RPG, ``E2VID,'' \url{https://github.com/uzh-rpg/rpg_e2vid}.
+\bibitem{openeye} chili-chips-ba, ``openEye-CamSI,'' \url{https://github.com/chili-chips-ba/openeye-CamSI}.
+\bibitem{ov9281} Antmicro, ``OV9281 Dual Camera Board,'' \url{https://github.com/antmicro/ov9281-camera-board}.
+\bibitem{oneincheye} will127534, ``OneInchEye,'' \url{https://github.com/will127534/OneInchEye}.
+\bibitem{axiom} apertus open source cinema, ``AXIOM Beta hardware,'' \url{https://github.com/apertus-open-source-cinema/beta-hardware}.
+\end{thebibliography}
+
+\end{document}

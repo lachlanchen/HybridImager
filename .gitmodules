@@ -1,0 +1,42 @@
+[submodule "external/one-pix"]
+	path = external/one-pix
+	url = https://github.com/PhotonicsOpenProjects/ONE-PIX.git
+[submodule "external/spyrit"]
+	path = external/spyrit
+	url = https://github.com/openspyrit/spyrit.git
+[submodule "external/event-based-get-started"]
+	path = external/event-based-get-started
+	url = https://github.com/prophesee-ai/event-based-get-started.git
+[submodule "external/openeb"]
+	path = external/openeb
+	url = https://github.com/prophesee-ai/openeb.git
+[submodule "external/oshw-recamera-series"]
+	path = external/oshw-recamera-series
+	url = https://github.com/Seeed-Studio/OSHW-reCamera-Series.git
+[submodule "external/one-inch-eye"]
+	path = external/one-inch-eye
+	url = https://github.com/will127534/OneInchEye.git
+[submodule "external/ov9281-camera-board"]
+	path = external/ov9281-camera-board
+	url = https://github.com/antmicro/ov9281-camera-board.git
+[submodule "external/axiom-beta-hardware"]
+	path = external/axiom-beta-hardware
+	url = https://github.com/apertus-open-source-cinema/beta-hardware.git
+[submodule "external/v2e"]
+	path = external/v2e
+	url = https://github.com/SensorsINI/v2e.git
+[submodule "external/rpg-e2vid"]
+	path = external/rpg-e2vid
+	url = https://github.com/uzh-rpg/rpg_e2vid.git
+[submodule "external/jaer"]
+	path = external/jaer
+	url = https://github.com/SensorsINI/jaer.git
+[submodule "external/openeye-camsi"]
+	path = external/openeye-camsi
+	url = https://github.com/chili-chips-ba/openeye-CamSI.git
+[submodule "external/single-pixel-camera-demo"]
+	path = external/single-pixel-camera-demo
+	url = https://github.com/aky91/Single-Pixel-Camera.git
+[submodule "external/one-pix-hardware"]
+	path = external/one-pix-hardware
+	url = https://github.com/PhotonicsOpenProjects/ONE-PIX_hardware.git
